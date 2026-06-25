@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors({
     origin: [
-      "http://localhost:3000",
+      process.env.FRONTEND_URL||"http://localhost:3000",
       "https://movie-recommendation-system-pi-ten.vercel.app",
     ],
     credentials: true,}));
