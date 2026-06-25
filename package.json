@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "start": "tsx src/index.ts"
+    "start": "tsx src/index.ts",
+    "build": "npm install && tsc",
+    "server": "node dist/index.js"
   },
   "dependencies": {
     "@langchain/core": "^1.2.1",
