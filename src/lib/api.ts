@@ -1,6 +1,6 @@
 import { RecommendationsResponse } from "@/types/movie";
 
-const api_url = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const api_url = process.env.NEXT_PUBLIC_API_URL;
 
 export async function fetchMovies(input: {
   userPrompt: string;
