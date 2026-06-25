@@ -1,12 +1,20 @@
-export type Movie = {
+export interface Movie {
   title: string;
   year: number;
+  rating: number;
   genre: string[];
   cast: string[];
-  reason: string;
-  rating: number;
-};
 
-export type RecommendationsResponse = {
-  movies: Movie[];
-};
+  posterUrl?: string;
+  reason?: string;
+  streamingLink?: string;
+
+  streamingProviders?: {
+    name: string;
+    logoUrl?: string;
+  }[];
+}
+
+export interface RecommendationsResponse {
+  recommendations: Movie[];
+}

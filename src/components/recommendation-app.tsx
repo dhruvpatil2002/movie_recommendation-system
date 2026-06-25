@@ -65,7 +65,7 @@ export function RecommendationApp() {
         count: Number(count),
       });
 
-      setMovies(data.movies ?? []);
+      setMovies(data.recommendations ?? []);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong");
       setMovies([]);
